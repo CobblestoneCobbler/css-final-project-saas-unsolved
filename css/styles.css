@@ -1,0 +1,198 @@
+.header {
+  width: fill;
+  height: 86px;
+  padding: 10px 30px;
+  background-color: #f6f8fa;
+}
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.topNav {
+  padding: 6px 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.topNavList {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.topSection {
+  width: fill;
+  height: 446px;
+  padding: 40px 30px 0px;
+}
+.topSectionContainer {
+  display: flex;
+  flex-direction: row;
+}
+.topSectionContent {
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: left;
+  gap: 30px;
+}
+.topSectionLogos {
+  width: 482px;
+  height: 406px;
+}
+.title {
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 24px;
+}
+.whyFrontSection {
+  width: fill;
+  padding: 0 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.whyFrontTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.whyFrontTitle > p {
+  width: 600px;
+}
+.bulletsList {
+  padding: 0 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bullet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.bulletTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bulletCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ecf2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bulletDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #0066ff;
+}
+.wing {
+  width: 83px;
+  height: 1px;
+  background-color: #ecf2ff;
+}
+.wing.hidden {
+  background-color: #ffffff;
+}
+.pricingSection {
+  width: fill;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.pricingTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.pricingTable {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.plan {
+  width: 370px;
+  border: 1px #e2e2e2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.planHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 30px;
+}
+.planPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.priceNum {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60.51px;
+  color: #000000;
+}
+.planPeriod {
+  padding: 9px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.planPeriod > div {
+  font-family: SF Pro;
+  font-weight: 510;
+  font-size: 20px;
+  line-height: 23.87px;
+  color: #677788;
+}
+.planDivider {
+  width: 290px;
+  height: 1px;
+  background-color: #8d8d8d;
+}
+.planHeader > p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #677788;
+}
+.planFeatures {
+  width: fill;
+  height: fill;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.feature {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+}

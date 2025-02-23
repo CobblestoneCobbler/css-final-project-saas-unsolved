@@ -122,37 +122,43 @@
             </p>
           </div>
           <div class="planFooter">
-            <!--TODO change to button-->
-            <div class="button"></div>
+            <!--TODO change to back to div-->
+            <button class="videoButton">
+              <span class="videoIcon"></span>Play Video
+            </button>
             <p>No credit card required.</p>
           </div>
         </div>
         <div class="planFeatures">
           <div class="feature" id="components">
             <div class="iconWrapper"></div>
-            <h2>Hundreds of components</h2>
-            <p>
+            <div class="featureTitle">Hundreds of components</div>
+            <div class="featureText">
               Achieve maximum productivity with minimum effort with Front and
               create robust Limitless products.
-            </p>
+            </div>
           </div>
           <div class="feature" id="images">
             <div class="iconWrapper"></div>
-            <h2>Images included</h2>
-            <p>
+            <div class="featureTitle">Images included</div>
+            <div class="featureText">
               Images included. We made custom license for all our premium images
               in the front
-            </p>
+            </div>
           </div>
           <div class="feature" id="cancel">
             <div class="iconWrapper"></div>
-            <h2>Cancel anytime</h2>
-            <p>If its not for you, just cancel, no hidden costs or fees.</p>
+            <div class="featureTitle">Cancel anytime</div>
+            <div class="featureText">
+              If its not for you, just cancel, no hidden costs or fees.
+            </div>
           </div>
           <div class="feature" id="moneyBack">
             <div class="iconWrapper"></div>
-            <h2>Money back</h2>
-            <p>100% guarateed money back. No questions asked.</p>
+            <div class="featureTitle">Money back</div>
+            <div class="featureText">
+              100% guarateed money back. No questions asked.
+            </div>
           </div>
         </div>
       </div>
@@ -160,24 +166,32 @@
     <div class="hireUsSection">
       <div class="hiringInfo">
         <div class="hiringText">
-          <div class="hiringTitle">
-            <h2></h2>
-            <p></p>
+          <div class="hiringTextUpper">
+            <div class="hiringTitle">
+              <h2>Hire Us</h2>
+              <p>Whatever your goal - we will get you there</p>
+            </div>
+            <div class="divider"></div>
           </div>
-          <div class="hiringReview"></div>
+          <div class="hiringReview">
+            “ I love front! I love the ease of use, I love the fact that I have
+            total creative freedom...”
+          </div>
         </div>
         <div class="hiringReviewCard">
           <div class="reviewName">
-            <h3></h3>
-            <div class="divider"></div>
-            <p></p>
+            <h3>Charlotte Moore</h3>
+            <p>Head of Commercials, Slack</p>
           </div>
-          <div class="reviewPicture"></div>
+          <div class="reviewPicture">
+            <img src="./assets/images/man_one.jpg" alt="Charlotte Moore" />
+          </div>
         </div>
       </div>
       <div class="hiringForm">
+        <!--TODO transform to form-->
         <div class="formData">
-          <h3></h3>
+          <h3>Fill out the form and we'll be in touch as soon as possible</h3>
           <div class="nameBox">
             <input
               type="text"
@@ -192,7 +206,7 @@
               placeholder="Last Name"
             />
           </div>
-          <div class="emailbox">
+          <div class="emailBox">
             <input type="email" name="email" id="email" placeholder="Email" />
           </div>
           <div class="dropdowns">
@@ -207,33 +221,36 @@
               <option value="EU">EU</option>
             </select>
           </div>
-          <div class="textbox">
-            <input
-              type="textarea"
-              name="info"
+          <div class="textBox">
+            <textarea
               id="info"
-              placeholder="Tell us more about your project, needs, and timeline,
-            please..."
-            />
+              name="info"
+              rows="5"
+              cols="33"
+              placeholder="Tell us more about your project, needs, and timeline, please..."
+              spellcheck="true"
+            >
+            </textarea>
           </div>
           <div class="checkboxes">
-            <input type="checkbox" name="offersBool" id="offersBool" />
-            <div class="checkboxInfo">
-              <div class="text">
-                <p>
+            <div class="checkboxWrapper">
+              <input type="checkbox" name="offersBool" id="offersBool" />
+              <div class="checkboxInfo">
+                <div>
                   Yes, I'd like to receive occasional marketing emails from
                   Front. I have the right to opt out at any time.
-                </p>
-              </div>
-              <div class="privacyWrapper">
-                <!--TODO change to href-->
-                <div>View Privacy Policy</div>
+                </div>
+                <div class="privacyWrapper">
+                  <!--TODO change to href-->
+                  <div>View Privacy Policy</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!--TODO change to submit button-->
-        <div class="button"></div>
+        <div class="formSubmit">
+          <button type="submit">Submit Form</button>
+        </div>
       </div>
     </div>
     <footer>
@@ -242,27 +259,30 @@
         <div class="contactInfo">
           <div class="addressWrapper">
             <div class="addressIcon"></div>
-            <div class="address"></div>
+            <div class="address">153 Williamson Plaza, Maggieberg</div>
           </div>
           <div class="phoneWrapper">
             <div class="phoneIcon"></div>
-            <div class="phone"></div>
+            <div class="phone">+1 (062) 109-9222</div>
           </div>
         </div>
       </div>
       <div class="directory">
         <div class="dir">
-          <h2>Company</h2>
+          <div class="dirTitle">Company</div>
           <div class="nav">
             <div>About</div>
-            <div id="career">Career</div>
+            <div id="career">
+              <div>Career</div>
+              <div>We're Hiring</div>
+            </div>
             <div>Blog</div>
             <div>Customers</div>
             <div>Hire Us</div>
           </div>
         </div>
         <div class="dir">
-          <h2>Features</h2>
+          <div class="dirTitle">Features</div>
           <div class="nav">
             <div>Press</div>
             <div>Release Notes</div>
@@ -271,7 +291,7 @@
           </div>
         </div>
         <div class="dir">
-          <h2>Documentation</h2>
+          <div class="dirTitle">Documentation</div>
           <div class="nav">
             <div>Support</div>
             <div>Docs</div>
@@ -281,7 +301,7 @@
           </div>
         </div>
         <div class="dir">
-          <h2>Resources</h2>
+          <div class="dirTitle">Resources</div>
           <div class="navResources">
             <div class="navWrapper">
               <div class="helpIcon"></div>

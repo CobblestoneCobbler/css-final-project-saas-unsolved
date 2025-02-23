@@ -53,6 +53,9 @@
   justify-content: left;
   gap: 24px;
 }
+body {
+  margin: 0;
+}
 .whyFrontSection {
   width: fill;
   padding: 0 30px 80px;
@@ -136,12 +139,12 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
 }
 .planHeader {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   gap: 30px;
 }
 .planPrice {
@@ -193,6 +196,302 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   gap: 20px;
+}
+.feature > .featureTitle {
+  color: #000000;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+}
+.feature > .featureText {
+  width: 237px;
+  color: #677788;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+.hireUsSection {
+  padding: 30px;
+  background-color: #20335b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hiringInfo {
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  flex: 1;
+  gap: 60px;
+}
+.hiringText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hiringTextUpper {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.hiringTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hiringTextUpper > .divider {
+  width: 370px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.hiringReview {
+  width: 363px;
+}
+.hiringReviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviewName {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.reviewPicture > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.hiringForm {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex: 1;
+  gap: 37px;
+}
+.formData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nameBox {
+  width: 392px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.emailBox {
+  width: 392px;
+  display: flex;
+}
+.nameBox > input {
+  width: 186px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #e6e8f2;
+}
+.emailBox > input {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #e6e8f2;
+  flex: 1;
+}
+.dropdowns {
+  width: 392px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.dropdowns > select {
+  padding: 10px 16px 10px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #e6e8f2;
+  flex: 1;
+}
+.textBox {
+  width: 392px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #e6e8f2;
+}
+.textBox > textarea {
+  width: 392px;
+  height: 150px;
+  resize: none;
+}
+.checkboxes {
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+.checkboxWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 16px;
+}
+.checkboxWrapper > input {
+  width: 25px;
+  height: 24px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #e6e8f2;
+}
+.checkboxInfo {
+  color: #828282;
+  font-family: SF Pro;
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.privacyWrapper {
+  color: #677788;
+  font-family: SF Pro;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.privacyWrapper:hover {
+  color: #2476ff;
+}
+.formSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formSubmit > button {
+  width: 150px;
+  border-width: 0;
+  border-radius: 30px;
+  padding: 15px 25px;
+  background-color: #2476ff;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.52px;
+}
+
+footer {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+.footerFontLogo {
+  width: 100px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.contactInfo > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 9px;
+}
+.address {
+  color: #677788;
+  font-family: SF Pro;
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+.phone {
+  color: #2576ff;
+  font-family: SF Pro;
+  font-weight: 510;
+  font-size: 14px;
+  line-height: 16.71px;
+}
+.directory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 49px;
+}
+.dir {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.dirTitle {
+  color: #000000;
+  font-family: SF Pro;
+  font-weight: 860;
+  font-size: 18px;
+  line-height: 21.48px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+.career {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 9px;
+}
+.nav > div,
+.career:first-child {
+  color: #677788;
+  font-family: SF Pro;
+  font-weight: 860;
+  font-size: 18px;
+  line-height: 21.48px;
+}
+.nav > div:hover {
+  color: #2476ff;
+}
+.career:last-child {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: #2576ff;
+  color: #ffffff;
+  font-family: SF Pro;
+  font-weight: 510;
+  font-size: 8px;
+  line-height: 9.55px;
 }

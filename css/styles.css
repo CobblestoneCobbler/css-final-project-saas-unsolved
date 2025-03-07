@@ -1,33 +1,65 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
   width: fill;
-  height: 86px;
-  padding: 10px 30px;
   background-color: #f6f8fa;
 }
 .headerWrapper {
+  height: 86px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.headerFontLogo {
+  width: 160px;
+  height: 48px;
 }
 .topNav {
   padding: 6px 14px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 30px;
 }
 .topNavList {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 30px;
+}
+.buyButton {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: #2476ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.buyNow {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
 }
 .topSection {
   width: fill;
   height: 446px;
   padding: 40px 30px 0px;
+  background-image: url("../assets/bg/background-top.svg");
 }
 .topSectionContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .topSectionContent {
   padding-bottom: 60px;
@@ -37,24 +69,105 @@
   align-content: left;
   gap: 30px;
 }
+.topSectionWords {
+  width: 334px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.topSectionTitle {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 40px;
+}
+.topSectionSubtext {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #677788;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 24px;
+}
+.learnMore {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 14px;
+  color: #677788;
+}
 .topSectionLogos {
   width: 482px;
   height: 406px;
+}
+.topSectionLogo {
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 13px 0px #00000040;
+}
+#google {
+  position: relative;
+  top: 10px;
+  left: 64px;
+}
+#googleCalendar {
+  position: relative;
+  top: 310px;
+  left: 364px;
+}
+#googleAds {
+  position: relative;
+  top: 290px;
+  left: 155px;
+}
+#paypal {
+  position: relative;
+  top: 172px;
+  left: 44px;
+}
+#weave {
+  position: relative;
+  top: 172px;
+  left: 262px;
+}
+#atlassian {
+  position: relative;
+  top: 10px;
+  left: 175px;
+}
+#asana {
+  position: relative;
+  top: 10px;
+  left: 380px;
+}
+.small {
+  width: 60px;
+  height: 60px;
+  margin: 0 0 -60px;
+  padding: 10px;
+}
+.large {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 -80px;
+  padding: 16px;
+}
+.small > img {
+  width: 40px;
+  height: 40px;
+}
+.large > img {
+  width: 48px;
+  height: 48px;
 }
 .title {
   width: 334px;
   display: flex;
   flex-direction: column;
   gap: 11px;
-}
-.actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  gap: 24px;
-}
-body {
-  margin: 0;
 }
 .whyFrontSection {
   width: fill;
@@ -70,8 +183,20 @@ body {
   align-items: center;
   gap: 10px;
 }
-.whyFrontTitle > p {
+.sectionTitle {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+.sectionSubtext {
   width: 600px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #677788;
 }
 .bulletsList {
   padding: 0 34px;
@@ -113,6 +238,12 @@ body {
 .wing.hidden {
   background-color: #ffffff;
 }
+.bulletTitle {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
 .pricingSection {
   width: fill;
   padding-bottom: 120px;
@@ -128,9 +259,11 @@ body {
   gap: 10px;
 }
 .pricingTable {
+  width: 964;
   padding: 0 30px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 30px;
 }
 .plan {
@@ -140,6 +273,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 50px;
+  box-shadow: 0px 10px 20px 0px #00000026;
 }
 .planHeader {
   display: flex;
@@ -166,7 +301,7 @@ body {
   gap: 7px;
 }
 .planPeriod > div {
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 510;
   font-size: 20px;
   line-height: 23.87px;
@@ -177,6 +312,58 @@ body {
   height: 1px;
   background-color: #8d8d8d;
 }
+.planInfo {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #677788;
+}
+.videoButton {
+  padding: 15px 25px;
+  border-radius: 30px;
+  background-color: #2476ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.planFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.videoIconCircle {
+  width: 18px;
+  height: 18px;
+  padding-left: 2px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videoIconTriangle {
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid transparent;
+  border-left: 10px solid #2476ff;
+  border-bottom: 6px solid transparent;
+}
+.playVideo {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+}
+.noCC {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  color: #677788;
+}
 .planHeader > p {
   font-family: Inter;
   font-weight: 500;
@@ -185,11 +372,11 @@ body {
   color: #677788;
 }
 .planFeatures {
-  width: fill;
-  height: fill;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .feature {
@@ -199,14 +386,22 @@ body {
   align-items: start;
   gap: 20px;
 }
-.feature > .featureTitle {
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+}
+.iconWrapper > * {
+  width: 50px;
+  height: 50px;
+}
+.featureTitle {
   color: #000000;
   font-family: Inter;
   font-weight: 700;
   font-size: 18px;
   line-height: 21.78px;
 }
-.feature > .featureText {
+.featureText {
   width: 237px;
   color: #677788;
   font-family: Inter;
@@ -241,10 +436,25 @@ body {
   flex-direction: column;
   gap: 34px;
 }
-.hiringTitle {
+.hiringTitleWrapper {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 10px;
+}
+.hiringTitle {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.hiringSubtext {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #677788;
 }
 .hiringTextUpper > .divider {
   width: 370px;
@@ -253,17 +463,35 @@ body {
 }
 .hiringReview {
   width: 363px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 .hiringReviewCard {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.reviewName {
+.reviewNameWrapper {
   padding-right: 20px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.reviewName {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+.reviewerTitle {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #677788;
 }
 .reviewPicture > img {
   width: 60px;
@@ -360,7 +588,7 @@ body {
 }
 .checkboxInfo {
   color: #828282;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 510;
   font-size: 14px;
   line-height: 22px;
@@ -370,13 +598,10 @@ body {
 }
 .privacyWrapper {
   color: #677788;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
-}
-.privacyWrapper:hover {
-  color: #2476ff;
 }
 .formSubmit {
   display: flex;
@@ -392,7 +617,7 @@ body {
   color: #ffffff;
   font-family: Inter;
   font-weight: 700;
-  font-size: 12px;
+  font-size: l2px solid;
   line-height: 14.52px;
 }
 
@@ -429,14 +654,14 @@ footer {
 }
 .address {
   color: #677788;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 510;
   font-size: 14px;
   line-height: 16.71px;
 }
 .phone {
   color: #2576ff;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 510;
   font-size: 14px;
   line-height: 16.71px;
@@ -453,10 +678,10 @@ footer {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  gap: 20px;
 }
 .dirTitle {
-  color: #000000;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 860;
   font-size: 18px;
   line-height: 21.48px;
@@ -468,30 +693,71 @@ footer {
   align-items: start;
   gap: 10px;
 }
-.career {
+#career {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 9px;
 }
-.nav > div,
-.career:first-child {
+.nav > div:not(#career),
+.career,
+.navWrapper {
+  font-family: SF Pro, Roboto;
+  font-weight: 510;
+  font-size: 14px;
   color: #677788;
-  font-family: SF Pro;
-  font-weight: 860;
-  font-size: 18px;
-  line-height: 21.48px;
 }
-.nav > div:hover {
-  color: #2476ff;
-}
-.career:last-child {
+.wereHiring {
   padding: 2px 4px;
   border-radius: 3px;
   background-color: #2576ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wereHiring > div {
   color: #ffffff;
-  font-family: SF Pro;
+  font-family: SF Pro, Roboto;
   font-weight: 510;
   font-size: 8px;
   line-height: 9.55px;
+}
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.navWrapper > div:first-child {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #677788;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+.helpIcon {
+  padding-right: 1px;
+}
+
+.helpIcon > div {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.accountIconCircle {
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.accountIconSemiCircle {
+  width: 6px;
+  height: 3px;
+  border-radius: 75% 75% 85% 85%;
+  background-color: #ffffff;
 }

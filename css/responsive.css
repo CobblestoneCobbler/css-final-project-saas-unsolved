@@ -1,0 +1,72 @@
+@media (min-width: 1024px) {
+  /*hovers*/
+  .topNavList > div:hover,
+  .learnMore:hover,
+  .privacyWrapper:hover,
+  .nav > div:not(#career):hover,
+  .career:hover,
+  .navWrapper:hover,
+  .navWrapper:hover > div:first-child {
+    color: #2476ff;
+  }
+
+  /*Animations*/
+  .right {
+    opacity: 0;
+    animation-name: fromRight;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .below {
+    opacity: 0;
+    animation-name: fromBelow;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  #google {
+    animation-delay: 0.5s;
+  }
+  #paypal {
+    animation-delay: 0.7s;
+  }
+  #asana {
+    animation-delay: 1s;
+  }
+  #atlassian {
+    animation-delay: 1.2s;
+  }
+  #weave {
+    animation-delay: 1.5s;
+  }
+  #googleAds {
+    animation-delay: 1.8s;
+  }
+  #googleCalendar {
+    animation-delay: 2s;
+  }
+  /* The rest */
+  header {
+    position: sticky;
+    top: 0px;
+  }
+  .planFeatures {
+    width: 570px;
+  }
+}
+@media (max-width: 1023px) {
+  .planFeatures {
+    width: 570px;
+  }
+}
+@media (max-width: 767px) {
+  .planFeatures {
+    width: 300px;
+  }
+}

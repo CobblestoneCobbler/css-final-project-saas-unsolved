@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
     <title>Saas company</title>
   </head>
   <body>
     <header>
       <div class="headerWrapper">
-        <div class="headerFontLogo"></div>
+        <div class="headerFontLogo">
+          <img src="./assets/logos/logo-front.svg" />
+        </div>
         <div class="topNav">
           <div class="topNavList">
             <div>Home</div>
@@ -17,8 +21,9 @@
             <div>Learn</div>
             <div>Pricing</div>
             <div>Hire us</div>
-            <!--TODO MAKE BUTTON-->
-            <div>Buy Now</div>
+          </div>
+          <div class="buyButton">
+            <div class="buyNow">Buy Now</div>
           </div>
           <div class="menu"></div>
         </div>
@@ -28,34 +33,54 @@
       <div class="topSectionBackground"></div>
       <div class="topSectionContainer">
         <div class="topSectionContent">
-          <div class="title">
-            <h1>Empowering teams with the freedom</h1>
-            <p>Own the unlimited power of web development</p>
+          <div class="topSectionWords">
+            <div class="topSectionTitle">Empowering teams with the freedom</div>
+            <div class="topSectionSubtext">
+              Own the unlimited power of web development
+            </div>
           </div>
           <div class="actions">
-            <!--TODO change to button and href-->
-            <div class="button">Play Video</div>
-            <div>link Learn More</div>
+            <div class="videoButton">
+              <div class="videoIconCircle">
+                <div class="videoIconTriangle"></div>
+              </div>
+              <div class="playVideo">Play Video</div>
+            </div>
+            <div class="learnMore">Learn More</div>
           </div>
         </div>
         <div class="topSectionLogos">
-          <div class="topSectionLogo" id="google"></div>
-          <div class="topSectionLogo" id="googleCalender"></div>
-          <div class="topSectionLogo" id="googleAds"></div>
-          <div class="topSectionLogo" id="paypal"></div>
-          <div class="topSectionLogo" id="weave"></div>
-          <div class="topSectionLogo" id="atlassian"></div>
-          <div class="topSectionLogo" id="asana"></div>
+          <div class="topSectionLogo small right" id="google">
+            <img src="./assets/logos/google.png" alt="Google Logo" />
+          </div>
+          <div class="topSectionLogo large below" id="googleCalendar">
+            <img src="./assets/logos/calendar.png" alt="Google Calendar Logo" />
+          </div>
+          <div class="topSectionLogo small right" id="googleAds">
+            <img src="./assets/logos/google-ads.png" alt="Google Ads Logo" />
+          </div>
+          <div class="topSectionLogo large below" id="paypal">
+            <img src="./assets/logos/paypal.jpg" alt="Paypal Logo" />
+          </div>
+          <div class="topSectionLogo large right" id="weave">
+            <img src="./assets/logos/weave.png" alt="Weave Logo" />
+          </div>
+          <div class="topSectionLogo large below" id="atlassian">
+            <img src="./assets/logos/atlassian.png" alt="Atlassian Logo" />
+          </div>
+          <div class="topSectionLogo large right" id="asana">
+            <img src="./assets/logos/asana.png" alt="Asana Logo" />
+          </div>
         </div>
       </div>
     </div>
     <div class="whyFrontSection">
       <div class="whyFrontTitle">
-        <h2>Why Front?</h2>
-        <p>
+        <div class="sectionTitle">Why Front?</div>
+        <div class="sectionSubtext">
           Front is an incredibly beautiful, fully responsive, and mobile-first
           projects on the web - it is the starting point for creative sites
-        </p>
+        </div>
       </div>
       <div class="bulletsList">
         <div class="bullet">
@@ -102,8 +127,10 @@
     </div>
     <div class="pricingSection">
       <div class="pricingTitle">
-        <h2>Pricing</h2>
-        <p>No additional costs. Pay for what you use</p>
+        <div class="sectionTitle">Pricing</div>
+        <div class="sectionSubtext">
+          No additional costs. Pay for what you use
+        </div>
       </div>
       <div class="pricingTable">
         <div class="plan">
@@ -116,22 +143,26 @@
               </div>
             </div>
             <div class="planDivider"></div>
-            <p>
+            <div class="planInfo">
               Start your Front business now. 100% guaranteed money back. No
               questions asked.
-            </p>
+            </div>
           </div>
           <div class="planFooter">
-            <!--TODO change to back to div-->
-            <button class="videoButton">
-              <span class="videoIcon"></span>Play Video
-            </button>
-            <p>No credit card required.</p>
+            <div class="videoButton">
+              <div class="videoIconCircle">
+                <div class="videoIconTriangle"></div>
+              </div>
+              <div class="playVideo">Play Video</div>
+            </div>
+            <div class="noCC">No credit card required.</div>
           </div>
         </div>
         <div class="planFeatures">
           <div class="feature" id="components">
-            <div class="iconWrapper"></div>
+            <div class="iconWrapper">
+              <img src="./assets/images/components.svg" />
+            </div>
             <div class="featureTitle">Hundreds of components</div>
             <div class="featureText">
               Achieve maximum productivity with minimum effort with Front and
@@ -139,7 +170,9 @@
             </div>
           </div>
           <div class="feature" id="images">
-            <div class="iconWrapper"></div>
+            <div class="iconWrapper">
+              <img src="./assets/images/images.svg" />
+            </div>
             <div class="featureTitle">Images included</div>
             <div class="featureText">
               Images included. We made custom license for all our premium images
@@ -147,14 +180,18 @@
             </div>
           </div>
           <div class="feature" id="cancel">
-            <div class="iconWrapper"></div>
+            <div class="iconWrapper">
+              <img src="./assets/images/cancel.svg" />
+            </div>
             <div class="featureTitle">Cancel anytime</div>
             <div class="featureText">
               If its not for you, just cancel, no hidden costs or fees.
             </div>
           </div>
           <div class="feature" id="moneyBack">
-            <div class="iconWrapper"></div>
+            <div class="iconWrapper">
+              <img src="./assets/images/moneyback.svg" />
+            </div>
             <div class="featureTitle">Money back</div>
             <div class="featureText">
               100% guarateed money back. No questions asked.
@@ -167,9 +204,11 @@
       <div class="hiringInfo">
         <div class="hiringText">
           <div class="hiringTextUpper">
-            <div class="hiringTitle">
-              <h2>Hire Us</h2>
-              <p>Whatever your goal - we will get you there</p>
+            <div class="hiringTitleWrapper">
+              <div class="hiringTitle">Hire Us</div>
+              <div class="hiringSubtext">
+                Whatever your goal - we will get you there
+              </div>
             </div>
             <div class="divider"></div>
           </div>
@@ -179,9 +218,9 @@
           </div>
         </div>
         <div class="hiringReviewCard">
-          <div class="reviewName">
-            <h3>Charlotte Moore</h3>
-            <p>Head of Commercials, Slack</p>
+          <div class="reviewNameWrapper">
+            <div class="reviewName">Charlotte Moore</div>
+            <div class="reviewerTitle">Head of Commercials, Slack</div>
           </div>
           <div class="reviewPicture">
             <img src="./assets/images/man_one.jpg" alt="Charlotte Moore" />
@@ -273,8 +312,8 @@
           <div class="nav">
             <div>About</div>
             <div id="career">
-              <div>Career</div>
-              <div>We're Hiring</div>
+              <div class="career">Career</div>
+              <div class="wereHiring"><div>We're Hiring</div></div>
             </div>
             <div>Blog</div>
             <div>Customers</div>
@@ -302,13 +341,18 @@
         </div>
         <div class="dir">
           <div class="dirTitle">Resources</div>
-          <div class="navResources">
+          <div class="nav">
             <div class="navWrapper">
-              <div class="helpIcon"></div>
+              <div class="helpIcon">
+                <div>i</div>
+              </div>
               <div>Help</div>
             </div>
             <div class="navWrapper">
-              <div class="accountIcon"></div>
+              <div class="accountIcon">
+                <div class="accountIconCircle"></div>
+                <div class="accountIconSemiCircle"></div>
+              </div>
               <div>Your Account</div>
             </div>
           </div>

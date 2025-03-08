@@ -61,12 +61,274 @@
   }
 }
 @media (max-width: 1023px) {
+  .topNavList,
+  .buyButton {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .topSection {
+    height: auto;
+  }
+  .sectionSubtext {
+    width: auto;
+  }
+  .topSectionContent {
+    height: 305px;
+    justify-content: start;
+    align-items: center;
+  }
+  .topSectionContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .topSectionWords {
+    width: auto;
+    align-items: center;
+  }
+  .topSectionTitle {
+    text-align: center;
+  }
+  .topSectionLogos {
+    width: 712px;
+  }
+  #google {
+    top: 0;
+    left: 110px;
+  }
+  #googleCalendar {
+    top: 229px;
+    left: 517px;
+  }
+  #googleAds {
+    top: 209px;
+    left: 230px;
+  }
+  #paypal {
+    top: 99px;
+    left: 112px;
+  }
+  #weave {
+    top: 99px;
+    left: 414px;
+  }
+  #atlassian {
+    top: 0;
+    left: 287px;
+  }
+  #asana {
+    top: 0;
+    left: 533px;
+  }
+  .whyFrontSection {
+    padding: 0 0 80px;
+  }
+  .bulletsList {
+    width: 100%;
+  }
+  .bullet {
+    width: 100%;
+    flex: 1;
+  }
+  .bulletTop {
+    width: 100%;
+  }
+  .wing {
+    width: 100%;
+    flex: 1;
+  }
+  .bulletTitle {
+    width: 100%;
+  }
+  .pricingTable {
+    width: 100%;
+    padding: 0 44px;
+    flex-direction: column;
+  }
+  .plan,
+  .planHeader {
+    width: 100%;
+    align-items: center;
+  }
+  .planDivider {
+    width: 100%;
+  }
   .planFeatures {
-    width: 570px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .feature {
+    width: 48%;
+  }
+  .hireUsSection {
+    flex-direction: column;
+    align-items: center;
+    flex: 0;
+  }
+  .hiringInfo {
+    width: 100%;
+    padding: 40px 30px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .reviewNameWrapper {
+    padding: 0;
+  }
+  .formWrapper {
+    padding: 30px;
+  }
+  .nameBox,
+  .emailBox,
+  .dropdowns,
+  .textBox,
+  .textBox > textarea,
+  .checkboxes,
+  .formTitle {
+    width: 100%;
+  }
+  .nameBox > input {
+    flex: 1;
+  }
+  footer {
+    gap: 60px;
+  }
+  .directory {
+    flex-wrap: wrap;
+    gap: 49px 80px;
+  }
+  .dir {
+    width: 40%;
   }
 }
 @media (max-width: 767px) {
+  .topSection {
+    padding: 40px 16px 0;
+  }
+  .topSectionLogos {
+    width: 328px;
+  }
+  #google {
+    top: 0;
+    left: 0;
+  }
+  #googleCalendar {
+    top: 219px;
+    left: 239px;
+  }
+  #googleAds {
+    top: 209px;
+    left: 106px;
+  }
+  #paypal {
+    top: 99px;
+    left: 0px;
+  }
+  #weave {
+    top: 99px;
+    left: 184px;
+  }
+  #atlassian {
+    top: 0;
+    left: 114px;
+  }
+  #asana {
+    top: 0;
+    left: 248px;
+  }
+  .whyFrontSection {
+    padding-bottom: 60px;
+  }
+  .bulletsList {
+    width: auto;
+    flex-direction: column;
+    align-items: start;
+    gap: 17px;
+  }
+  .bullet {
+    width: auto;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .bulletTop {
+    width: 50px;
+  }
+  .wing {
+    display: none;
+  }
+  .bulletText {
+    text-align: start;
+  }
+  .pricingSection {
+    padding: 0 16px 60px;
+  }
   .planFeatures {
-    width: 300px;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .feature {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .featureText {
+    width: auto;
+  }
+  .hiringInfo {
+    padding: 40px 16px 20px;
+    flex-direction: column;
+  }
+  .hiringText,
+  .hiringTitleWrapper {
+    align-items: center;
+  }
+  .hiringTextUpper,
+  .hiringTextUpper > .divider {
+    width: auto;
+  }
+  .hiringReview,
+  .hiringSubtext,
+  .reviewName,
+  .reviewerTitle {
+    width: auto;
+    text-align: center;
+  }
+  .reviewPicture {
+    display: flex;
+    justify-content: center;
+  }
+  .nameBox,
+  .dropdowns {
+    flex-direction: column;
+  }
+  .formWrapper {
+    padding: 30px 16px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  .directory {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .contactCard,
+  .contactInfo,
+  .dir,
+  .nav {
+    align-items: center;
+  }
+  .nav {
+    gap: 20px;
+  }
+  .helpIcon {
+    padding: 0;
   }
 }

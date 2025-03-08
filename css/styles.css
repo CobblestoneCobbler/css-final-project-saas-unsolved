@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 header {
-  width: fill;
   background-color: #f6f8fa;
+  z-index: 10;
 }
 .headerWrapper {
   height: 86px;
@@ -35,6 +35,12 @@ header {
   align-items: center;
   gap: 30px;
 }
+.topNavList > div {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #677788;
+}
 .buyButton {
   padding: 15px 25px;
   border-radius: 30px;
@@ -50,8 +56,18 @@ header {
   font-size: 12px;
   color: #ffffff;
 }
+.menu {
+  display: none;
+  padding: 6px 14px;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu > div {
+  width: 18px;
+  height: 2px;
+  background-color: #677788;
+}
 .topSection {
-  width: fill;
   height: 446px;
   padding: 40px 30px 0px;
   background-image: url("../assets/bg/background-top.svg");
@@ -66,7 +82,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: left;
+  align-content: start;
   gap: 30px;
 }
 .topSectionWords {
@@ -170,7 +186,7 @@ header {
   gap: 11px;
 }
 .whyFrontSection {
-  width: fill;
+  width: 100%;
   padding: 0 30px 80px;
   display: flex;
   flex-direction: column;
@@ -245,7 +261,6 @@ header {
   text-align: center;
 }
 .pricingSection {
-  width: fill;
   padding-bottom: 120px;
   display: flex;
   flex-direction: column;
@@ -259,11 +274,12 @@ header {
   gap: 10px;
 }
 .pricingTable {
-  width: 964;
+  width: 100%;
   padding: 0 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .plan {
@@ -380,6 +396,7 @@ header {
   gap: 10px;
 }
 .feature {
+  width: 49%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -400,6 +417,20 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 21.78px;
+}
+#cancelTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#sketch {
+  padding: 4px 10px;
+  background-color: #01c9a7;
+  border-radius: 15px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
 }
 .featureText {
   width: 237px;
@@ -515,6 +546,12 @@ header {
   align-items: center;
   gap: 20px;
 }
+.formTitle {
+  font-family: SF Pro, Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
 .nameBox {
   width: 392px;
   display: flex;
@@ -557,14 +594,14 @@ header {
   width: 392px;
   height: 150px;
   padding: 10px;
+  border: 1px solid #e6e8f2;
   border-radius: 5px;
-  border-width: 1px;
-  border-color: #e6e8f2;
 }
 .textBox > textarea {
-  width: 392px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   resize: none;
+  border: none;
 }
 .checkboxes {
   width: 392px;
@@ -669,9 +706,10 @@ footer {
 .directory {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: start;
   gap: 49px;
+  flex: 1;
 }
 .dir {
   display: flex;
@@ -744,6 +782,7 @@ footer {
 }
 
 .helpIcon > div {
+  height: 12px;
   font-size: 10px;
   font-weight: 700;
   color: #ffffff;

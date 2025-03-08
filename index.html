@@ -25,7 +25,11 @@
           <div class="buyButton">
             <div class="buyNow">Buy Now</div>
           </div>
-          <div class="menu"></div>
+          <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
     </header>
@@ -183,7 +187,10 @@
             <div class="iconWrapper">
               <img src="./assets/images/cancel.svg" />
             </div>
-            <div class="featureTitle">Cancel anytime</div>
+            <div id="cancelTitle">
+              <div class="featureTitle">Cancel anytime</div>
+              <div id="sketch">sketch</div>
+            </div>
             <div class="featureText">
               If its not for you, just cancel, no hidden costs or fees.
             </div>
@@ -227,74 +234,86 @@
           </div>
         </div>
       </div>
-      <div class="hiringForm">
-        <!--TODO transform to form-->
-        <div class="formData">
-          <h3>Fill out the form and we'll be in touch as soon as possible</h3>
-          <div class="nameBox">
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              placeholder="Last Name"
-            />
-          </div>
-          <div class="emailBox">
-            <input type="email" name="email" id="email" placeholder="Email" />
-          </div>
-          <div class="dropdowns">
-            <select name="budget" id="budget">
-              <option value="budgetOption1">1</option>
-              <option value="budgetOption2">2</option>
-              <option value="budgetOption3">3</option>
-              <option value="budgetOption4">4</option>
-            </select>
-            <select name="country" id="country">
-              <option value="USA">USA</option>
-              <option value="EU">EU</option>
-            </select>
-          </div>
-          <div class="textBox">
-            <textarea
-              id="info"
-              name="info"
-              rows="5"
-              cols="33"
-              placeholder="Tell us more about your project, needs, and timeline, please..."
-              spellcheck="true"
-            >
-            </textarea>
-          </div>
-          <div class="checkboxes">
-            <div class="checkboxWrapper">
-              <input type="checkbox" name="offersBool" id="offersBool" />
-              <div class="checkboxInfo">
-                <div>
-                  Yes, I'd like to receive occasional marketing emails from
-                  Front. I have the right to opt out at any time.
-                </div>
-                <div class="privacyWrapper">
-                  <!--TODO change to href-->
-                  <div>View Privacy Policy</div>
+      <div class="formWrapper">
+        <form name="hiring" class="hiringForm">
+          <div class="formData">
+            <div class="formTitle">
+              Fill out the form and we'll be in touch as soon as possible
+            </div>
+            <div class="nameBox">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div class="emailBox">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="dropdowns">
+              <select name="budget" id="budget">
+                <option value="budgetOption1">1</option>
+                <option value="budgetOption2">2</option>
+                <option value="budgetOption3">3</option>
+                <option value="budgetOption4">4</option>
+              </select>
+              <select name="country" id="country">
+                <option value="USA">USA</option>
+                <option value="EU">EU</option>
+              </select>
+            </div>
+            <div class="textBox">
+              <textarea
+                id="info"
+                name="info"
+                rows="5"
+                cols="33"
+                placeholder="Tell us more about your project, needs, and timeline, please..."
+                spellcheck="true"
+              ></textarea>
+            </div>
+            <div class="checkboxes">
+              <div class="checkboxWrapper">
+                <input type="checkbox" name="offersBool" id="offersBool" />
+                <div class="checkboxInfo">
+                  <div>
+                    Yes, I'd like to receive occasional marketing emails from
+                    Front. I have the right to opt out at any time.
+                  </div>
+                  <div class="privacyWrapper">
+                    <!--TODO change to href-->
+                    <div>View Privacy Policy</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="formSubmit">
-          <button type="submit">Submit Form</button>
-        </div>
+          <div class="formSubmit">
+            <button type="submit">Submit Form</button>
+          </div>
+        </form>
       </div>
     </div>
     <footer>
       <div class="contactCard">
-        <div class="footerFontLogo"></div>
+        <div class="footerFontLogo">
+          <img src="./assets/logos/logo-front.svg" />
+        </div>
         <div class="contactInfo">
           <div class="addressWrapper">
             <div class="addressIcon"></div>

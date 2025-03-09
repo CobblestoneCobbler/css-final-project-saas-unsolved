@@ -43,6 +43,7 @@ header {
 }
 .buyButton {
   padding: 15px 25px;
+  border: 2px solid #2476ff;
   border-radius: 30px;
   background-color: #2476ff;
   display: flex;
@@ -337,6 +338,7 @@ header {
 }
 .videoButton {
   padding: 15px 25px;
+  border: 2px solid #2476ff;
   border-radius: 30px;
   background-color: #2476ff;
   display: flex;
@@ -446,6 +448,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 70px;
 }
 .hiringInfo {
   padding-left: 70px;
@@ -453,7 +456,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  flex: 1;
   gap: 60px;
 }
 .hiringText {
@@ -647,14 +649,14 @@ header {
 }
 .formSubmit > button {
   width: 150px;
-  border-width: 0;
+  border: 2px solid #2476ff;
   border-radius: 30px;
   padding: 15px 25px;
   background-color: #2476ff;
   color: #ffffff;
   font-family: Inter;
   font-weight: 700;
-  font-size: l2px solid;
+  font-size: 12px;
   line-height: 14.52px;
 }
 
@@ -712,6 +714,7 @@ footer {
   flex: 1;
 }
 .dir {
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -746,6 +749,7 @@ footer {
   color: #677788;
 }
 .wereHiring {
+  min-width: 55px;
   padding: 2px 4px;
   border-radius: 3px;
   background-color: #2576ff;

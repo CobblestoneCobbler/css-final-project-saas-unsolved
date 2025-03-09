@@ -1,4 +1,21 @@
 @media (min-width: 1024px) {
+  .topNavList > div,
+  .learnMore,
+  .privacyWrapper,
+  .nav > div:not(#career),
+  .career,
+  .navWrapper,
+  .navWrapper > div:first-child,
+  .buyButton,
+  .videoButton,
+  .formSubmit > button,
+  .buyButton > div,
+  .videoButton > .playVideo,
+  .videoButton > .videoIconCircle,
+  .videoButton > .videoIconCircle > .videoIconTriangle,
+  .plan {
+    transition-duration: 1s;
+  }
   /*hovers*/
   .topNavList > div:hover,
   .learnMore:hover,
@@ -8,6 +25,30 @@
   .navWrapper:hover,
   .navWrapper:hover > div:first-child {
     color: #2476ff;
+  }
+  .plan {
+    box-shadow: none;
+  }
+  .plan:hover {
+    box-shadow: 0px 10px 20px 0px #00000026;
+  }
+
+  /* Button Hovers */
+  .buyButton:hover,
+  .videoButton:hover,
+  .formSubmit > button:hover {
+    background-color: #ffffff;
+  }
+  .buyButton:hover > div,
+  .videoButton:hover > .playVideo,
+  .formSubmit > button:hover {
+    color: #2476ff;
+  }
+  .videoButton:hover > .videoIconCircle {
+    background-color: #2476ff;
+  }
+  .videoButton:hover > .videoIconCircle > .videoIconTriangle {
+    border-left: 10px solid #ffffff;
   }
 
   /*Animations*/
@@ -165,13 +206,12 @@
   .hireUsSection {
     flex-direction: column;
     align-items: center;
-    flex: 0;
+    gap: 0;
   }
   .hiringInfo {
     width: 100%;
     padding: 40px 30px 20px;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
   .reviewNameWrapper {
